@@ -9,10 +9,12 @@ permissions:
   contents: read
 
 jobs:
-  hola mundo:
+  saludo:
     runs-on: ubuntu-latest
     steps:
       - name: Mostrar mensaje
-        run: echo "GitHub Actions inició por un evento"
+        run: echo "Hola mundo, esta es mi práctica 9"
       - name: Mostrar contexto básico
         run: echo "Evento=$GITHUB_EVENT_NAME Rama=$GITHUB_REF_NAME"
+      - name: Mostrar versión de Node
+        run: node --version
